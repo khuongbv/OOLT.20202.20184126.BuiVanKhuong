@@ -10,7 +10,6 @@ public static final int MAX_NUMBERS_ORDERED = 10;
 		if(this.qtyOrdered < MAX_NUMBERS_ORDERED) {
 			itemOrdered[qtyOrdered] = disc;
 			qtyOrdered++;
-			System.out.println("The disc " + disc.getTitle() + " has been added!");
 		} else {
 			System.out.println("the order is full, can't add anymore!");
 		}
