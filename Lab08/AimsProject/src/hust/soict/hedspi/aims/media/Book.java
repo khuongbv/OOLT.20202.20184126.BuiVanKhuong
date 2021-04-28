@@ -1,7 +1,6 @@
 package hust.soict.hedspi.aims.media;
 
 import java.util.*;
-
 public class Book extends Media{
 	private ArrayList<String> authors = new ArrayList<String>();
 	private String content;
@@ -22,6 +21,7 @@ public class Book extends Media{
 
 	public void setContent(String content) {
 		this.content = content;
+		processContent();
 	}
 
 	public Book(int id, String title) {
@@ -66,7 +66,19 @@ public class Book extends Media{
 	}
 	
 	public void processContent() {
-		
+		contentTokens.addAll(Arrays.asList(content.split("\\s+")));
+        Collections.sort(contentTokens);
+        Iterator<String> iterator = contentTokens.iterator();
+        while(iterator.hasNext()) {
+            String string = iterator.next();
+            if (!wordFrequency.containsKey(string)) {
+                wordFrequency.put(string, 1);
+            }else {
+                int a = wordFrequency.get(string);
+                a++;
+                wordFrequency.put(string, a);
+            }
+        }
 	}
 	
 	@Override

@@ -12,6 +12,14 @@ public class Track implements Playable, Comparable<Track>{
 		return length;
 	}
 	
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
 	public Track(int length, String title) {
 		this.length = length;
 		this.title = title;

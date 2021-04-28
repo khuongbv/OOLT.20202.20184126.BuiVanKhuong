@@ -5,6 +5,14 @@ public class Disc extends Media{
 	protected String director;
 	protected int length;
 	
+	public void setDirector(String director) {
+		this.director = director;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
 	public String getDirector() {
 		return director;
 	}
