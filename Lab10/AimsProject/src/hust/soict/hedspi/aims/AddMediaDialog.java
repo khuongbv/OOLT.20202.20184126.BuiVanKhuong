@@ -28,7 +28,6 @@ public class AddMediaDialog {
         int x = (int) ((dimension.getWidth() - 500))/2;
         int y = (int) ((dimension.getHeight() - 450))/2;
         selectDialog.setLocation(x, y);
-//		selectDialog.setVisible(false);
         selectDialog.setModal(true);
         selectDialog.setTitle("Select Media");
 

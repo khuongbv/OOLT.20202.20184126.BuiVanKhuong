@@ -21,7 +21,7 @@ public class MenuFrame extends JFrame {
 	JButton createButton = new JButton("Create new Order");
     JButton addButton = new JButton("Add item to the order");
     JButton deleteButton = new JButton("Delete item by Id");
-    JButton displayButton = new JButton("Display the items of list order ");
+    JButton displayButton = new JButton("Display the items list of order");
     JButton createThresholds = new JButton("Create Thresholds");
     JButton exitButton = new JButton("Exit");
     public static Order anOrder;
